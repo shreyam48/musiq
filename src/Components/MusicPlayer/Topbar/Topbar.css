@@ -1,0 +1,42 @@
+.play-nav > .navbar{
+    height: 80px;
+    background: #191927;
+}
+.main{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 40px;
+    background: #191927 !important;
+}
+.main > .form-group{
+    margin-top: 10px;
+    width:50%;
+    border-radius: 10px;
+}
+
+.main >.has-search .form-control {
+    padding-left: 2.8rem;
+    background-color: #2a2a3a;
+    border: 0px;
+}
+
+.main > .has-search .form-control-feedback {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    width: 1rem;
+    height: 1rem;
+    line-height: 2.4rem;
+    text-align: center;
+    pointer-events: none;
+    color: #01B8CD;
+    font-size: large;
+}
+.img{
+    margin-top: 7px;
+    height:55px;
+    width:160px;
+}
+

@@ -1,0 +1,119 @@
+*{
+  font-family: 'Roboto';
+}
+.content{
+    height: 100%;
+    color: white;
+    background: #191927;
+    width:100%;
+    padding: 20px 50px 50px; 
+}
+.heading{
+  color: white;
+  padding-left: 34px;
+}
+.play-list{
+  display:grid ;
+  grid-gap: 50px 20px;
+  grid-template-columns: auto auto auto auto auto; 
+  padding: 20px; 
+  padding-bottom: 70px;
+}
+
+@media only screen and (max-width: 1500px){
+  .play-list{
+    display:grid ;
+    grid-gap: 50px 20px;
+    grid-template-columns: auto auto auto auto; 
+    padding: 20px; 
+    padding-bottom: 70px;
+  }
+}
+.artist-list{
+  display:grid ;
+  grid-gap: 50px 20px;
+  grid-template-columns: auto auto ; 
+  padding: 20px; 
+  padding-bottom: 70px;
+}
+.play-list .track,.a-track{ 
+    height: auto;
+    background-color: #1E1E2D;
+    transition: 0.3s;
+    padding-top: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.track{
+  width: 215px;
+}
+.a-track{
+  width: 210px;
+}
+.artist-img{
+  width:180px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+
+}
+.artist-name{
+  margin: 30px 0;
+}
+
+.track:hover , .a-track:hover{
+  background:  linear-gradient(180deg, #1D1D2A 0%, #303040 100%);
+  color: white;
+}
+.center-img{
+  display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .track-img{
+    width:180px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+  
+
+   .track-discr{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 8px;
+        padding-bottom: 15px;
+   }
+   
+.track-name{
+          font-size: 17px;
+          margin-top: 8px;
+          max-width: 150px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-weight: 500;
+        }
+        .track-author{
+          margin-top: 8px;
+          font-weight: 300;
+          font-size: 14px;
+          color: rgb(0, 238, 255);
+        }
+       .track-duration{
+        min-width: 40px;
+        font-weight: 500;
+      }  
+
+
+
+@keyframes play {
+0%{
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+ 

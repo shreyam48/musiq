@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.artist-details{
+    background: #191927;
+    height: 100%;
+}
+.a-header{
+    height: 12rem;
+    display:flex;
+}
+.circle-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left:100px;
+    margin-top:70px;    
+}
+.name-singer{
+    color: whitesmoke;
+    font-size: 65px;
+    font-weight:700;
+    letter-spacing: 0.5px;
+    margin-top: 80px;
+    padding-left: 70px;
+
+}
+.follow-btn{
+    margin-left: 100px;
+    margin-bottom: -50px;
+}
+.follow-btn > h3{
+    padding:10px;
+    font-size: 24px;
+border: 2px solid;
+border-radius:5px;
+color:#76c4ce;
+}
+.follow-btn > h3:hover{
+    background-color: #76c4ce;
+    color:#191927;
+}
+.play-1{
+    margin-top:68px;
+    margin-left: 20px;
+}
+.play-1 > .play-pause{
+    color:#66c6d3;
+}
+.a-body{
+    background: #232333;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.a-body > .heading{
+    color: rgb(226, 226, 226);
+    font-size: 26px;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+    padding: 70px 70px 25px ;
+}  
+.music-icon{
+    height: 35px;
+    width: 35px;
+} 
+.a-body > .row{
+    padding: 0 70px;
+    width: 100%;
+}
+.taylor-list{
+    display:flex;
+    margin: 10px 5px 10px 0;
+    color: rgb(134, 180, 180);
+    align-items: center;
+}
+.taylor-img{
+    width: 50px;
+    height:50px;
+    object-fit: cover;
+    margin: 0 25px 0 0;
+}
+.taylor-index{
+    padding: 0 20px 0 0;
+}
+.taylor-specs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:rgb(134, 180, 180);
+    padding-left:250px;
+}
+
+.t-icon1, .t-icon2{
+    color: rgb(134, 180, 180);;
+    display: flex;
+    align-items: center;
+}
+.t-icon1{
+    margin-left: 200px;
+}
+.t-icon1:hover{
+    color:rgb(231, 47, 109);
+}
+
+.a-body > .row:hover {
+    background-color: #191927;
+    color: whitesmoke;
+    content: "\f02c";
+}
+
+@media only screen and (max-width: 1500px){
+    .taylor-specs{
+        padding-left:200px;
+    }
+}
